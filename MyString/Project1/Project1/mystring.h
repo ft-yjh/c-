@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stddef.h>
 #include <iostream>
+#include<atlalloc.h>
 using namespace std;
 class MyString {
 public:
@@ -8,6 +9,7 @@ public:
 	MyString(const MyString & other);
 	MyString & operator=(const MyString & another);
 	MyString operator+(const MyString & other);
+	MyString & operator+=(const MyString & other);
 	bool operator==(const MyString &other);
 	bool operator>(const MyString &other);
 	bool operator<(const MyString &other);
