@@ -58,12 +58,12 @@ class Point; //Ç°ÏòÉùÃ÷
     class Point
     {
 	public: 
-	friend double Distance(const Point & p1, const Point & p2);
+	friend double ManagerPoint::Distance(const Point & p1, const Point & p2);
 	Point(double x, double y):m_x(x), m_y(y){
 	}
 	
 	void get();
-    public:
+    private:
 		double m_x;
 		double m_y;
  } ;
